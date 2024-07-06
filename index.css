@@ -1,0 +1,123 @@
+html, body{
+    width: 512px;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+.header{
+    background-color: #f8f8f8;
+    border-bottom : 1px solid #e7e7e7;
+    height: 75px;
+    width: 100%;
+    display:flex;
+}
+
+.logo{
+    padding: 22px 2px 22px 10px;
+}
+
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 0.9rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+
+.form__input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.main-input{
+    width:100%;
+    padding: 15px 10px;
+}
+
+#result{
+  overflow:auto;
+  max-height:300px;
+  padding: 10px 12px;
+  display: grid;
+    gap: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item--img img {
+  pointer-events: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.grid-item p {
+  pointer-events: none;
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.grid-item--img {
+  pointer-events: none;
+  margin: 0;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.grid-item:hover{
+  cursor:pointer;
+  background-color: #f1f1f1;
+}
+
+.grid-item:active{
+  cursor:pointer;
+  background-color: #e9e9e9;
+}
